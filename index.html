@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="main page to contain the content of the course WDD231 - BYU Idaho">
     <meta name="author" content="Danilo Mayer">
+
     <title>Danilo Mayer - WDD 231 - BYU Idaho</title>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
-    <script src="scripts/hamburguermenu.js" defer></script>
+    <script defer src="scripts/hamburgermenu.js"></script>
+    <script defer src="scripts/hamburguermenu.js"></script>
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/scripts.js"></script>
+    <script defer src="scripts/displayCourses.js"></script>
 </head>
 
 <body>
@@ -21,18 +26,16 @@
     <!-- HEADER -->
     <header>
         <img id="profile" src="images/profile.webp" alt="profile-photo">
-        <h1>Danilo Mayer</h1>
+        <h1></h1>
     </header>
 
     <!-- NAVIGATION -->
     <button id="menu"></button>
     <nav class="navigation">
         <a class="navlink" href="#" id="active">Home</a>
-        <a class="navlink" href="lesson03/chamber-site-plan.html">Site Plan</a>
         <a class="navlink" href="chamber/index.html">Chamber</a>
         <a class="navlink" href="https://github.com/danilomayer" target="_blank">Github</a>
         <a class="navlink" href="https://www.linkedin.com/in/danilomayer/?locale=en_US" target="_blank">LinkedIn</a>
-        <a class="navlink" href="form.html" target="_blank">Join</a>
     </nav>
 
     <!-- MAIN CONTENT -->
@@ -49,7 +52,7 @@
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
-            <h3>Learning Activities</h3>
+            <h2>Learning Activities</h2>
             <ul>
                 <li><a href="">Activity 1</a></li>
                 <li><a href="lesson02/design.html">lesson02</a></li>
@@ -69,16 +72,17 @@
                 <li><a href="lesson09/prophets.html">The Fetch API</a></li>
             </ul>
         </section>
-        <section class="card">
-            <h3>Information</h3>
-            <!-- Information placeholders about the weather, number of visits to the page, etc. -->
+        <section class="card courses">
+            <h2>Courses</h2>
+            <!-- Courses will be dynamically inserted here -->
         </section>
 
-        <div class="map">
+        <section class="map">
+            <h2>Map</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234337.35820322635!2d-52.132853928758244!3d-23.405531619711027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0d9132b0bf9%3A0x49a4970763bcf0e8!2sMaring%C3%A1%20-%20State%20of%20Paran%C3%A1!5e0!3m2!1sen!2sbr!4v1706148396925!5m2!1sen!2sbr"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
@@ -86,7 +90,6 @@
         <p>&copy; <span id="currentdate"></span> <br> Danilo Mayer <br> Parana, Brazil</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 
 </html>

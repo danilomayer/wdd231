@@ -35,6 +35,8 @@ h1 {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    cursor: pointer;
+    /* Add cursor pointer */
 }
 
 #menu::before {
@@ -67,7 +69,7 @@ h1 {
     font-weight: 700;
 }
 
-.open a {
+.navigation.open a {
     display: block;
 }
 
@@ -145,7 +147,7 @@ h2:after {
     border-radius: 15px;
 }
 
-h3 {
+section h2 {
     display: flex;
     margin: auto;
     font-size: 1.5em;
@@ -180,6 +182,22 @@ iframe {
     height: 250;
 }
 
+.course-card {
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.course-card.completed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.course-card.incomplete {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
 
 footer {
     display: grid;
