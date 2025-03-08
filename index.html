@@ -3,16 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - BYU Idaho</title>
     <meta name="description" content="main page to contain the content of the course WDD231 - BYU Idaho">
     <meta name="author" content="Danilo Mayer">
+    <title>Danilo Mayer - WDD 231 - BYU Idaho</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1></h1>
-    <p></p>
+
+    <!-- HEADER -->
+    <header>
+        <img id="profile" src="images/profile.webp" alt="profile-photo">
+        <h1>Danilo Mayer</h1>
+    </header>
+
+    <!-- NAVIGATION -->
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a class="navlink" href="#" id="active">Home</a>
+        <a class="navlink" href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a class="navlink" href="chamber/index.html">Chamber</a>
+        <a class="navlink" href="https://www.byui.edu/" target="_blank">BYU- Idaho</a>
+        <a class="navlink" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/5?lang=eng&id=p13#p13"
+            target="_blank">Scripture</a>
+        <a class="navlink" href="form.html" target="_blank">Join</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/saopaulo-small.webp">
+            <img src="images/saopaulo-large.webp" alt="Sao Paulo Temple">
+        </picture>
+        <div class="herolabel">
+            <p>Sao Paulo Brazil Temple</p>
+        </div>
+    </div>
+
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="">Activity 1</a></li>
+                <li><a href="lesson02/design.html">lesson02</a></li>
+                <li><a href="images/csscombinators.webp">CSS Combinators</a></li>
+                <li><a href="https://codepen.io/Danilo-Mayer/pen/bGZrYrp">CSS Pseudo-elements</a></li>
+                <li><a href="https://codepen.io/Danilo-Mayer/pen/JjzyvxG?editors=1100">Responsive menu using
+                        'Hamburger'</a></li>
+                <li><a href="lesson03/chamber-site-plan.html">Chamber of Commerce Site-plan</a></li>
+                <li><a href="chamber/index.html">Maringa Chamber of Commerce</a></li>
+                <li><a href="lesson05/bom.html">BOM Favorite Chapter</a></li>
+                <li><a href="lesson03/images/landscape.webp">WebP</a></li>
+                <li><a href="lesson06/responsive-images.html">Responsive Images: srcset</a></li>
+                <li><a href="lesson07/lazyload.html">Lazy Loading</a></li>
+                <li><a href="lesson08/tablebuild.html">Table Build</a></li>
+                <li><a href="lesson08/form-start/index.html">Form Build</a></li>
+                <li><a href="lesson09/new-ward-members.json">Json</a></li>
+                <li><a href="lesson09/prophets.html">The Fetch API</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <!-- Information placeholders about the weather, number of visits to the page, etc. -->
+        </section>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234337.35820322635!2d-52.132853928758244!3d-23.405531619711027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0d9132b0bf9%3A0x49a4970763bcf0e8!2sMaring%C3%A1%20-%20State%20of%20Paran%C3%A1!5e0!3m2!1sen!2sbr!4v1706148396925!5m2!1sen!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="currentdate"></span> <br> Danilo Mayer <br> Parana, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 
