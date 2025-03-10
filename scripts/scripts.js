@@ -80,4 +80,4 @@ const courses = [
         ],
         completed: false
     }
-]
+];
