@@ -1,65 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     const cardsContainer = document.getElementById('cards');
 
-    // Sample data for members (replace with actual API or JSON data if available)
-    const members = [
-        {
-            name: "John's Bakery",
-            address: "123 Main St, New Orleans, LA",
-            phone: "(555) 123-4567",
-            website: "http://johnsbakery.com",
-            logo: "images/johns-bakery-logo.png",
-            membershipLevel: "Gold"
-        },
-        {
-            name: "Smith's Hardware",
-            address: "456 Elm St, New Orleans, LA",
-            phone: "(555) 987-6543",
-            website: "http://smithshardware.com",
-            logo: "images/smiths-hardware-logo.png",
-            membershipLevel: "Silver"
-        },
-        {
-            name: "Green Landscaping",
-            address: "789 Oak St, New Orleans, LA",
-            phone: "(555) 555-5555",
-            website: "http://greenlandscaping.com",
-            logo: "images/green-landscaping-logo.png",
-            membershipLevel: "Bronze"
-        },
-        {
-            name: "Blue Ocean Spa",
-            address: "101 River Rd, New Orleans, LA",
-            phone: "(555) 222-3333",
-            website: "http://blueoceanspa.com",
-            logo: "images/blue-ocean-spa-logo.png",
-            membershipLevel: "Gold"
-        },
-        {
-            name: "Tech Solutions",
-            address: "202 Tech St, New Orleans, LA",
-            phone: "(555) 444-5555",
-            website: "http://techsolutions.com",
-            logo: "images/tech-solutions-logo.png",
-            membershipLevel: "Silver"
-        },
-        {
-            name: "Healthy Eats",
-            address: "303 Wellness Ave, New Orleans, LA",
-            phone: "(555) 666-7777",
-            website: "http://healthyeats.com",
-            logo: "images/healthy-eats-logo.png",
-            membershipLevel: "Bronze"
-        },
-        {
-            name: "Artisan Furniture",
-            address: "404 Craft Ln, New Orleans, LA",
-            phone: "(555) 888-9999",
-            website: "http://artisanfurniture.com",
-            logo: "images/artisan-furniture-logo.png",
-            membershipLevel: "Gold"
+    // Fetch member data from the JSON file
+    const fetchMembers = async () => {
+        try {
+            const response = await fetch('members.json');
+            if (!response.ok) {
+                throw new Error('Failed to fetch members data');
+            }
+            return await response.json();
+        } catch (error) {
+            console.error(error);
+            return [];
         }
-    ];
+    };
 
     // Function to create a card for each member
     const createMemberCard = (member) => {
@@ -79,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Populate the cards container with member cards
+    const members = await fetchMembers();
     members.forEach(member => {
         const memberCard = createMemberCard(member);
         cardsContainer.appendChild(memberCard);
