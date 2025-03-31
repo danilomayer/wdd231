@@ -43,8 +43,8 @@
         <main>
             <h1>Directory page for the New Orleans Chamber of Commerce</h1>
             <div id="view-toggle">
-                <button id="grid-view" aria-label="Switch to Grid View">Grid View</button>
-                <button id="list-view" aria-label="Switch to List View">List View</button>
+                <button id="grid-view" data-view="grid" aria-label="Switch to Grid View">Grid View</button>
+                <button id="list-view" data-view="list" aria-label="Switch to List View">List View</button>
             </div>
             <div id="cards" aria-live="polite"></div>
         </main>
@@ -71,20 +71,6 @@
         <script>
             const options = { day: 'numeric', month: 'short', year: 'numeric' };
             document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
-
-            const cards = document.getElementById('cards');
-            const gridViewButton = document.getElementById('grid-view');
-            const listViewButton = document.getElementById('list-view');
-
-            gridViewButton.addEventListener('click', () => {
-                cards.classList.add('grid');
-                cards.classList.remove('list');
-            });
-
-            listViewButton.addEventListener('click', () => {
-                cards.classList.add('list');
-                cards.classList.remove('grid');
-            });
         </script>
     </div>
 </body>

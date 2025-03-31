@@ -4,7 +4,7 @@
         "address": "123 Main St, New Orleans, LA",
         "phone": "(555) 123-4567",
         "website": "http://johnsbakery.com",
-        "logo": "images/johns-bakery-logo.png",
+        "logo": "/chamber/images/company1.jpg",
         "membershipLevel": "Gold"
     },
     {
@@ -12,7 +12,7 @@
         "address": "456 Elm St, New Orleans, LA",
         "phone": "(555) 987-6543",
         "website": "http://smithshardware.com",
-        "logo": "images/smiths-hardware-logo.png",
+        "logo": "/chamber/images/company2.jpg",
         "membershipLevel": "Silver"
     },
     {
@@ -20,7 +20,7 @@
         "address": "789 Oak St, New Orleans, LA",
         "phone": "(555) 555-5555",
         "website": "http://greenlandscaping.com",
-        "logo": "images/green-landscaping-logo.png",
+        "logo": "/chamber/images/company3.jpg",
         "membershipLevel": "Bronze"
     },
     {
@@ -28,7 +28,7 @@
         "address": "101 River Rd, New Orleans, LA",
         "phone": "(555) 222-3333",
         "website": "http://blueoceanspa.com",
-        "logo": "images/blue-ocean-spa-logo.png",
+        "logo": "/chamber/images/company4.jpg",
         "membershipLevel": "Gold"
     },
     {
@@ -36,7 +36,7 @@
         "address": "202 Tech St, New Orleans, LA",
         "phone": "(555) 444-5555",
         "website": "http://techsolutions.com",
-        "logo": "images/tech-solutions-logo.png",
+        "logo": "/chamber/images/company1.jpg",
         "membershipLevel": "Silver"
     },
     {
@@ -44,7 +44,7 @@
         "address": "303 Wellness Ave, New Orleans, LA",
         "phone": "(555) 666-7777",
         "website": "http://healthyeats.com",
-        "logo": "images/healthy-eats-logo.png",
+        "logo": "/chamber/images/company2.jpg",
         "membershipLevel": "Bronze"
     },
     {
@@ -52,7 +52,7 @@
         "address": "404 Craft Ln, New Orleans, LA",
         "phone": "(555) 888-9999",
         "website": "http://artisanfurniture.com",
-        "logo": "images/artisan-furniture-logo.png",
+        "logo": "/chamber/images/company3.jpg",
         "membershipLevel": "Gold"
     }
 ]

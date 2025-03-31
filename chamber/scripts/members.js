@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const cardsContainer = document.getElementById('cards');
+    const viewToggleButtons = document.querySelectorAll('#view-toggle button');
 
     // Fetch member data from the JSON file
     const fetchMembers = async () => {
@@ -32,10 +33,47 @@ document.addEventListener('DOMContentLoaded', async () => {
         return card;
     };
 
-    // Populate the cards container with member cards
+    // Function to create a list row for each member
+    const createMemberRow = (member) => {
+        const row = document.createElement('div');
+        row.classList.add('list-row');
+
+        row.innerHTML = `
+            <div>${member.name}</div>
+            <div>${member.address}</div>
+            <div>${member.phone}</div>
+            <div><a href="${member.website}" target="_blank">Visit Website</a></div>
+        `;
+
+        return row;
+    };
+
+    // Populate the cards container with member cards or rows
     const members = await fetchMembers();
-    members.forEach(member => {
-        const memberCard = createMemberCard(member);
-        cardsContainer.appendChild(memberCard);
+    const renderView = (view) => {
+        cardsContainer.innerHTML = '';
+        if (view === 'grid') {
+            members.forEach(member => {
+                const memberCard = createMemberCard(member);
+                cardsContainer.appendChild(memberCard);
+            });
+        } else if (view === 'list') {
+            members.forEach(member => {
+                const memberRow = createMemberRow(member);
+                cardsContainer.appendChild(memberRow);
+            });
+        }
+    };
+
+    // Add event listeners to toggle buttons
+    viewToggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const view = button.dataset.view;
+            cardsContainer.className = view;
+            renderView(view);
+        });
     });
+
+    // Default view
+    renderView('grid');
 });

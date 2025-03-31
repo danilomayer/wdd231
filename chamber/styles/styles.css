@@ -86,9 +86,36 @@ main {
 }
 
 #cards.list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.list-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.list-row div {
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-row a {
+    color: #0077B6;
+    text-decoration: none;
+}
+
+.list-row a:hover {
+    text-decoration: underline;
 }
 
 .card {
@@ -108,14 +135,16 @@ main {
 }
 
 .card img.member-logo {
-    max-width: 100%;
+    max-width: 50%;
+    /* Further reduced size */
     height: auto;
     border-radius: 4px;
     margin-bottom: 1rem;
 }
 
 .card.list img.member-logo {
-    max-width: 100px;
+    max-width: 30px;
+    /* Further reduced size */
     height: auto;
     border-radius: 4px;
 }
@@ -182,6 +211,7 @@ footer p {
     display: none;
     background-color: #0077B6;
     color: #FFFFFF;
+    margin: 0.3rem;
     border: none;
     padding: 10px;
     font-size: 1.5rem;
