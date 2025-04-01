@@ -1,6 +1,3 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = "WDD231 - DANILO MAYER";
-
 // ARRAY OF COURSES
 const courses = [
     {
