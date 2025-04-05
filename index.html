@@ -17,7 +17,7 @@
 
     <script defer src="scripts/hamburgermenu.js"></script>
     <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/scripts.js"></script>
+    <script defer src="scripts/courses.js"></script>
     <script defer src="scripts/displayCourses.js"></script>
 </head>
 
@@ -70,7 +70,14 @@
 
         <section class="card courses">
             <h3>Web and Computer Programming Certificate</h3>
-            <!-- Courses will be dynamically inserted here -->
+            <div class="filter-buttons">
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div class="courses-container">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
         </section>
     </main>
 
