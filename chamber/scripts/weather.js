@@ -17,8 +17,9 @@ fetch(apiUrl)
         // Add weather icon
         const weatherIconCode = currentWeather.weather[0].icon;
         const weatherIconUrl = `https://openweathermap.org/img/wn/${weatherIconCode}@2x.png`;
-        document.getElementById('weather-icon').src = weatherIconUrl;
-        document.getElementById('weather-icon').alt = currentWeather.weather[0].description;
+        const weatherIconElement = document.getElementById('weather-icon');
+        weatherIconElement.src = weatherIconUrl; // Dynamically set the src attribute
+        weatherIconElement.alt = currentWeather.weather[0].description; // Set the alt attribute
 
         document.getElementById('forecast-day1').textContent = `Today: ${data.list[8].main.temp}°F`;
         document.getElementById('forecast-day2').textContent = `Tomorrow: ${data.list[16].main.temp}°F`;
