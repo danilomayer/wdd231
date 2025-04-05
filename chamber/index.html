@@ -15,8 +15,8 @@
     <meta property="og:site_name" content="New Orleans Chamber of Commerce">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="pt_BR">
-    <title>Directory page for the New Orleans Chamber of Commerce</title>
-    <link rel="icon" href="images/favicon-chamber.ico">
+    <title>Home page for the New Orleans Chamber of Commerce</title>
+    <link rel="icon" href="images/new-orleans-chamber-of-commerce-high-resolution-logo.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -51,17 +51,32 @@
 
         <main>
             <h1>Home</h1>
-            <div>
-                <h2>Events</h2>
+            <div id="info-sections">
+                <section id="events">
+                    <h2>Events</h2>
+                    <img src="images/event2.jpg" alt="Business event invitation">
+                </section>
+                <section id="current-weather">
+                    <h2>Current Weather</h2>
+                    <img id="weather-icon" src="" alt="Weather icon" />
+                    <p id="weather-temp"></p>
+                    <p id="weather-desc"></p>
+                    <p id="weather-high"></p>
+                    <p id="weather-low"></p>
+                    <p id="weather-humidity"></p>
+                    <p id="weather-sunrise"></p>
+                    <p id="weather-sunset"></p>
+                </section>
+                <section id="weather-forecast">
+                    <h2>Weather Cast</h2>
+                    <p id="forecast-day1"></p>
+                    <p id="forecast-day2"></p>
+                    <p id="forecast-day3"></p>
+                </section>
             </div>
-            <div>
-                <h2>Current Weather</h2>
-            </div>
-            <div>
-                <h2>Weather Forecast</h2>
-            </div>
-            <section>
-                <p>Business Spotlight</p>
+            <section id="business-spotlight">
+                <h2>Business Spotlight</h2>
+                <div id="spotlight-container"></div>
             </section>
         </main>
 
@@ -69,7 +84,7 @@
             <div id="description">
                 <p>&copy; <span id="currentdate"></span> New Orleans Chamber of Commerce <br>
                     by Danilo Mayer <br>
-                    for Brigham Young University Idaho - WDD230 class
+                    for Brigham Young University Idaho
                 </p>
                 <p><span id="lastModified"></span></p>
             </div>
@@ -84,6 +99,8 @@
         <script src="scripts/darkmode.js"></script>
         <script src="scripts/windchill.js"></script>
         <script src="scripts/members.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/spotlight.js"></script>
         <script>
             const options = { day: 'numeric', month: 'short', year: 'numeric' };
             document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);

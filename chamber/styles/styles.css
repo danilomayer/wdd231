@@ -218,26 +218,147 @@ main {
 }
 
 /* ===========================
-   Footer Styles
+   Info Sections Styles
    =========================== */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0077B6;
+#info-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#info-sections section {
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#info-sections h2 {
+    background-color: #03045E;
     color: #FFFFFF;
-    padding: 20px;
+    text-align: center;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+/* ===========================
+   Events Styles
+   =========================== */
+#events {
+    grid-column: 1/3;
+    align-items: center;
+}
+
+#events img {
+    max-width: 70%;
+    height: auto;
+    margin: 0.5rem auto;
+    /* Center the image */
+    display: block;
+    /* Ensure the image is treated as a block element */
+}
+
+/* ===========================
+   Current Weather Styles
+   =========================== */
+#current-weather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 3/4;
+}
+
+#current-weather h2 {
+    grid-column: span 2;
+}
+
+#current-weather #weather-icon {
+    grid-column: span 1;
+    max-width: 100px;
+    height: auto;
+    justify-self: center;
+    /* Center the icon */
+}
+
+#current-weather p {
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
+}
+
+#current-weather p:nth-of-type(1) {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem 0;
+    grid-column: 2/3;
+    margin: 0.25rem 0;
+}
+
+/* ===========================
+   Weather Forecast Styles
+   =========================== */
+
+#weather-forecast {
+    grid-column: 4/5;
+}
+
+#weather-forecast p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   Business Spotlight Styles
+   =========================== */
+#business-spotlight {
+    margin: 2rem 0;
+}
+
+#spotlight-container {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-footer #description,
-footer #social {
-    flex: 1;
-    margin: 10px;
+.business-card {
+    display: inline-block;
+    width: 30%;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-footer p {
-    margin: 5px 0;
+.business-card img {
+    max-width: 100px;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+.business-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.business-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
 }
 
 /* ===========================
@@ -297,6 +418,29 @@ footer p {
 
 #hero .hero-button:hover {
     background-color: #005f8a;
+}
+
+/* ===========================
+   Footer Styles
+   =========================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer #description,
+footer #social {
+    flex: 1;
+    margin: 10px;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 /* ===========================
