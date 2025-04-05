@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page for the New Orleans Chamber of Commerce website.">
+    <meta name="author" content="Danilo Mayer">
+    <meta property="og:title" content="CCM - Chamber of Commerce of Maringa">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.neworleanschamber.org/">
+    <meta property="og:url" content="https://danilomayer.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Main page for the New Orleans Chamber of Commerce website.">
+    <meta property="og:site_name" content="New Orleans Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <title>Directory page for the New Orleans Chamber of Commerce</title>
+    <link rel="icon" href="images/favicon-chamber.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="images/favicon-chamber.ico" alt="New Orleans Chamber of Commerce Logo" class="logo-img">
+            <div id="mode">
+                🌓
+            </div>
+        </header>
+
+        <button id="menu" aria-label="Toggle Navigation Menu">
+            <b>☰</b>
+        </button>
+        <nav class="navigation" aria-label="Main Navigation">
+            <a href="index.html" class="navlink">Home</a>
+            <a href="directory.html" class="navlink">Directory</a>
+            <a href="join.html" class="navlink">Join</a>
+            <a href="discover.html" class="navlink">Discover</a>
+        </nav>
+
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Welcome to the New Orleans Chamber of Commerce</h2>
+                <p>Connecting businesses and fostering growth in our community.</p>
+                <a href="join.html" class="hero-button">Join Us Today</a>
+            </div>
+            <img src="images/hero-image.jpg" alt="New Orleans cityscape" class="hero-image">
+        </section>
+
+        <main>
+            <h1>Directory page for the New Orleans Chamber of Commerce</h1>
+            <div id="view-toggle">
+                <button id="grid-view" data-view="grid" aria-label="Switch to Grid View">Grid View</button>
+                <button id="list-view" data-view="list" aria-label="Switch to List View">List View</button>
+            </div>
+            <div id="cards" aria-live="polite"></div>
+        </main>
+
+        <footer>
+            <div id="description">
+                <p>&copy; <span id="currentdate"></span> New Orleans Chamber of Commerce <br>
+                    by Danilo Mayer <br>
+                    for Brigham Young University Idaho - WDD230 class
+                </p>
+                <p><span id="lastModified"></span></p>
+            </div>
+            <div id="social">
+                <p>Social Media</p>
+                <p>Contact us @</p>
+                <p>#888 777 6655</p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hambutton.js"></script>
+        <script src="scripts/darkmode.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/members.js"></script>
+        <script>
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
+        </script>
+    </div>
+</body>
+
+</html>
