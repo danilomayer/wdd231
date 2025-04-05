@@ -28,7 +28,7 @@ h1 {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* Reduce font size for better fit */
     white-space: nowrap;
     /* Prevent text wrapping */
@@ -106,7 +106,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: antiquewhite;
     color: #333;
     padding: 2%;
@@ -139,11 +138,11 @@ section h3 {
 }
 
 .maringa img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 10px;
     display: block;
-    margin: 0.2rem auto;
+    margin: 1rem auto;
     /* Center the image */
 }
 
