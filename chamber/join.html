@@ -47,29 +47,59 @@
         <main class="form">
             <div>
                 <h1>Benefits</h1>
+                <!-- Membership Cards -->
                 <div class="benefits non-profit">
                     <h3>Non-Profit Membership:</h3>
                     <p>Support our community and contribute to local growth as a non-profit member.</p>
+                    <button class="modal-btn" data-modal="nonProfitModal">View Benefits</button>
+                </div>
+                <div class="benefits bronze">
+                    <h3>Bronze Membership:</h3>
+                    <p>The Bronze membership is designed for businesses looking to establish a strong presence in the
+                        community.</p>
+                    <button class="modal-btn" data-modal="bronzeModal">View Benefits</button>
+                </div>
+                <div class="benefits silver">
+                    <h3>Silver Membership:</h3>
+                    <p>Elevate your business with the Silver membership, offering enhanced visibility and opportunities.
+                    </p>
+                    <button class="modal-btn" data-modal="silverModal">View Benefits</button>
+                </div>
+                <div class="benefits gold">
+                    <h3>Gold Membership:</h3>
+                    <p>Maximize your impact and influence with the Gold membership, tailored for businesses seeking
+                        premium benefits.</p>
+                    <button class="modal-btn" data-modal="goldModal">View Benefits</button>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div id="nonProfitModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Non-Profit Membership Benefits</h3>
                     <ul>
                         <li>Recognition as a community supporter.</li>
                         <li>Access to networking events.</li>
                         <li>Inclusion in community outreach programs.</li>
                     </ul>
                 </div>
-                <div class="benefits bronze">
-                    <h3>Bronze Membership:</h3>
-                    <p>The Bronze membership is designed for businesses looking to establish a strong presence in the
-                        community.</p>
+            </div>
+            <div id="bronzeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Bronze Membership Benefits</h3>
                     <ul>
                         <li>Basic listing in the chamber directory.</li>
                         <li>Invitations to business seminars and workshops.</li>
                         <li>Access to member-exclusive newsletters.</li>
                     </ul>
                 </div>
-                <div class="benefits silver">
-                    <h3>Silver Membership:</h3>
-                    <p>Elevate your business with the Silver membership, offering enhanced visibility and opportunities.
-                    </p>
+            </div>
+            <div id="silverModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Silver Membership Benefits</h3>
                     <ul>
                         <li>Upgraded listing with a logo in the chamber directory.</li>
                         <li>Priority access to networking events.</li>
@@ -77,10 +107,11 @@
                         <li>Discounts on chamber-sponsored programs.</li>
                     </ul>
                 </div>
-                <div class="benefits gold">
-                    <h3>Gold Membership:</h3>
-                    <p>Maximize your impact and influence with the Gold membership, tailored for businesses seeking
-                        premium benefits.</p>
+            </div>
+            <div id="goldModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Gold Membership Benefits</h3>
                     <ul>
                         <li>Prominent logo placement in all chamber communications.</li>
                         <li>VIP access to exclusive events and business leader forums.</li>
@@ -90,6 +121,7 @@
                     </ul>
                 </div>
             </div>
+
             <form method="get" action="thankyou.html">
                 <div id="formmessage"></div>
                 <h1>Subscribe</h1>
@@ -149,9 +181,10 @@
         </footer>
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hambutton.js"></script>
-        <script src="scripts/darkmode.js"></script>
-        <script src="scripts/windchill.js"></script>
         <script src="scripts/members.js"></script>
+        <script src="scripts/modal.js"></script>
+        <script src="scripts/darkmode.js"></script>
+
         <script>
             const options = { day: 'numeric', month: 'short', year: 'numeric' };
             document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
