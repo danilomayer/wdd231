@@ -705,6 +705,10 @@ footer p {
         transform: translateX(-100%);
     }
 
+    nav.navigation.active {
+        margin-bottom: 10rem;
+    }
+
     nav.navigation .navlink {
         margin: 10px 0;
         text-align: center;
@@ -802,6 +806,10 @@ footer p {
     nav.navigation {
         flex-direction: column;
         padding: 10px 0;
+    }
+
+    nav.navigation.active {
+        margin-bottom: 8rem;
     }
 
     #view-toggle {
