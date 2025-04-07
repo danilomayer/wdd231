@@ -445,8 +445,6 @@ main.form h1 {
 main.form .benefits {
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: #F0F8FF;
-    border: 1px solid #0077B6;
     border-radius: 8px;
 }
 
@@ -514,6 +512,36 @@ main.form form button {
 
 main.form form button:hover {
     background-color: #005f8a;
+}
+
+/* ===========================
+   Membership Benefits Styles
+   =========================== */
+.benefits.non-profit {
+    background-color: #F0F8FF;
+    /* Light blue for non-profit */
+    border: 1px solid #0077B6;
+}
+
+.benefits.bronze {
+    background-color: #CD7F32;
+    /* Bronze color */
+    border: 1px solid #8B5A2B;
+    color: #FFFFFF;
+}
+
+.benefits.silver {
+    background-color: #C0C0C0;
+    /* Silver color */
+    border: 1px solid #A9A9A9;
+    color: #000000;
+}
+
+.benefits.gold {
+    background-color: #FFD700;
+    /* Gold color */
+    border: 1px solid #DAA520;
+    color: #000000;
 }
 
 /* ===========================
