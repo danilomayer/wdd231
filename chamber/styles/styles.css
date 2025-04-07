@@ -429,7 +429,6 @@ main.form {
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     max-width: 1100px;
-    margin: 2rem;
     padding: 1.5rem;
     background-color: #FFFFFF;
     border: 1px solid #ccc;
@@ -541,7 +540,10 @@ main.form form button:hover {
     color: #000000;
 }
 
-/* Modal Styles */
+/* ===========================
+   Modal Styles
+   =========================== */
+
 .modal {
     display: none;
     position: fixed;
@@ -602,6 +604,47 @@ main.form form button:hover {
 .close:focus {
     color: #000;
     text-decoration: none;
+}
+
+/* ===========================
+   Thank You Styles
+   =========================== */
+
+main.thank-you {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1.5rem;
+    background-color: #F9F9F9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.thank-you h1 {
+    color: #0077B6;
+    margin-bottom: 1rem;
+}
+
+main.thank-you p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.form-summary {
+    text-align: left;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.form-summary p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
 /* ===========================

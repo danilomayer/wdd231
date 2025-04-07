@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you page for the New Orleans Chamber of Commerce website.">
+    <meta name="author" content="Danilo Mayer">
+    <title>Thank You - New Orleans Chamber of Commerce</title>
+    <link rel="icon" href="images/chamber-logo.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="images/chamber-logo.png" alt="New Orleans Chamber of Commerce Logo" class="logo-img">
+            <div class="header-text">
+                <h2>New Orleans</h2>
+                <h3>Chamber of Commerce</h3>
+            </div>
+        </header>
+
+        <main class="thank-you">
+            <h1>Thank You for Joining!</h1>
+            <p>We have received your application with the following details:</p>
+            <div class="form-summary">
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <p><strong>Phone:</strong> <span id="phone"></span></p>
+                <p><strong>Business/Organization Name:</strong> <span id="businessName"></span></p>
+                <p><strong>Form Submitted On:</strong> <span id="formDate"></span></p>
+            </div>
+            <p>We will contact you soon with more details. Thank you for supporting the New Orleans Chamber of Commerce!
+            </p>
+        </main>
+
+        <footer>
+            <div id="description">
+                <p>&copy; <span id="currentdate"></span> New Orleans Chamber of Commerce <br>
+                    by Danilo Mayer <br>
+                    for Brigham Young University Idaho - WDD230 class
+                </p>
+            </div>
+            <div id="social">
+                <p>Social Media</p>
+                <p>Contact us @</p>
+                <p>#888 777 6655</p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script>
+            // Populate the thank you page with form data
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('firstName').textContent = urlParams.get('fname');
+            document.getElementById('lastName').textContent = urlParams.get('lname');
+            document.getElementById('email').textContent = urlParams.get('email');
+            document.getElementById('phone').textContent = urlParams.get('phone');
+            document.getElementById('businessName').textContent = urlParams.get('businessOrg');
+            document.getElementById('formDate').textContent = new Date(urlParams.get('formTimestamp')).toLocaleString();
+        </script>
+    </div>
+</body>
+
+</html>
