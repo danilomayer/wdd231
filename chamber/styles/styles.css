@@ -430,6 +430,7 @@ main.form {
     gap: 5rem;
     max-width: 1100px;
     padding: 1.5rem;
+    margin: 2rem auto;
     background-color: #FFFFFF;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -513,10 +514,22 @@ main.form form button:hover {
 /* ===========================
    Membership Benefits Styles
    =========================== */
+
+/* Membership Cards Animation */
+.benefits {
+    opacity: 0;
+    /* Start invisible */
+    transform: translateY(20px);
+    /* Start slightly below */
+    animation: fadeInUp 1s ease-out forwards;
+    /* Apply animation */
+}
+
 .benefits.non-profit {
     background-color: #F0F8FF;
     /* Light blue for non-profit */
     border: 1px solid #0077B6;
+    animation-delay: 0.2s;
 }
 
 .benefits.bronze {
@@ -524,6 +537,7 @@ main.form form button:hover {
     /* Bronze color */
     border: 1px solid #8B5A2B;
     color: #000000;
+    animation-delay: 0.4s;
 }
 
 .benefits.silver {
@@ -531,6 +545,7 @@ main.form form button:hover {
     /* Silver color */
     border: 1px solid #A9A9A9;
     color: #000000;
+    animation-delay: 0.6s;
 }
 
 .benefits.gold {
@@ -538,6 +553,7 @@ main.form form button:hover {
     /* Gold color */
     border: 1px solid #DAA520;
     color: #000000;
+    animation-delay: 0.8s;
 }
 
 /* ===========================
@@ -805,5 +821,18 @@ footer p {
 
     main.form {
         margin: -10rem 0 0 0;
+    }
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
