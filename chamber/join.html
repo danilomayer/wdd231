@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page for the New Orleans Chamber of Commerce website.">
+    <meta name="author" content="Danilo Mayer">
+    <meta property="og:title" content="CCM - Chamber of Commerce of Maringa">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.neworleanschamber.org/">
+    <meta property="og:url" content="https://danilomayer.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Directory page for the New Orleans Chamber of Commerce website.">
+    <meta property="og:site_name" content="New Orleans Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <title>Directory page for the New Orleans Chamber of Commerce</title>
+    <link rel="icon" href="images/chamber-logo.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <img src="images/chamber-logo.png" alt="New Orleans Chamber of Commerce Logo" class="logo-img">
+            <div class="header-text">
+                <h2>New Orleans</h2>
+                <h3>Chamber of Commerce</h3>
+            </div>
+            <div id="mode">
+                🌓
+            </div>
+        </header>
+
+        <button id="menu" aria-label="Toggle Navigation Menu">
+            <b>☰</b>
+        </button>
+        <nav class="navigation" aria-label="Main Navigation">
+            <a href="index.html" class="navlink">Home</a>
+            <a href="directory.html" class="navlink">Directory</a>
+            <a href="join.html" class="navlink">Join</a>
+            <a href="discover.html" class="navlink">Discover</a>
+        </nav>
+
+        <main class="form">
+            <div>
+                <h1>Benefits</h1>
+                <div class="benefits">
+
+                    <h3>Non-Profit Membership:</h3>
+                    <p>Support our community and contribute to local growth as a non-profit member.</p>
+
+                    <ul>
+                        <li>Recognition as a community supporter.</li>
+                        <li>Access to networking events.</li>
+                        <li>Inclusion in community outreach programs.</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+
+                    <h3>Bronze Membership:</h3>
+                    <p>The Bronze membership is designed for businesses looking to establish a strong presence in
+                        the community.</p>
+
+                    <ul>
+                        <li>Basic listing in the chamber directory.</li>
+                        <li>Invitations to business seminars and workshops.</li>
+                        <li>Access to member-exclusive newsletters.</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+
+                    <h3>Silver Membership:</h3>
+                    <p>Elevate your business with the Silver membership, offering enhanced visibility and
+                        opportunities.</p>
+
+                    <ul>
+                        <li>Upgraded listing with a logo in the chamber directory.</li>
+                        <li>Priority access to networking events.</li>
+                        <li>Featured spot in the chamber's promotional materials.</li>
+                        <li>Discounts on chamber-sponsored programs.</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+
+                    <h3>Gold Membership:</h3>
+                    <p>Maximize your impact and influence with the Gold membership, tailored for businesses seeking
+                        premium benefits.</p>
+
+                    <ul>
+                        <li>Prominent logo placement in all chamber communications.</li>
+                        <li>VIP access to exclusive events and business leader forums.</li>
+                        <li>Dedicated promotional opportunities through the chamber's media channels.</li>
+                        <li>Priority sponsorship opportunities for chamber events.</li>
+                        <li>Access to advanced business development programs.</li>
+                    </ul>
+                </div>
+            </div>
+            <form method="get" action="thankyou.html">
+                <div id="formmessage"></div>
+                <h1>Subscribe</h1>
+                <fieldset>
+                    <div class="divisions">
+                        <h2>Applicant's Information</h2>
+                    </div>
+                    <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label class="top">Title or Position* <input type="text" id="title" name="title"
+                            pattern="[A-Za-z19,-, ]{7}" required></label>
+                    <label class="top">Email* <input type="email" id="email" name="email" required
+                            placeholder="johndoe@abc.com"></label>
+                    <label class="top">Phone* <input type="tel" id="phone" name="phone" required></label>
+                    <label class="top">Business/Organization's Name* <input type="text" id="businessOrg"
+                            name="businessOrg" required></label>
+
+                    <div class="divisions">Membership Level</div>
+                    <label class="level"><input type="radio" id="np" name="memberlevel" required> NP Membership
+                        is
+                        for
+                        non
+                        profit organizations and there is no fee.</label>
+                    <label class="level"><input type="radio" id="bronze" name="memberlevel" required> Bronze
+                        Membership</label>
+                    <label class="level"><input type="radio" id="silver" name="memberlevel" required> Silver
+                        Membership</label>
+                    <label class="level"><input type="radio" id="gold" name="memberlevel" required> Gold
+                        Membership
+                    </label>
+
+                    <div class="divisions">Description</div>
+                    <label class="top">Business/Organization's Description*
+                        <textarea name="businessDesc" id="businessDesc" cols="50" rows="8"></textarea>
+                    </label>
+
+                    <input type="hidden" name="hidden" id="hidden">
+
+                    <button type="submit">I Wish to Join</button>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <div id="description">
+                <p>&copy; <span id="currentdate"></span> New Orleans Chamber of Commerce <br>
+                    by Danilo Mayer <br>
+                    for Brigham Young University Idaho - WDD230 class
+                </p>
+                <p><span id="lastModified"></span></p>
+            </div>
+            <div id="social">
+                <p>Social Media</p>
+                <p>Contact us @</p>
+                <p>#888 777 6655</p>
+            </div>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hambutton.js"></script>
+        <script src="scripts/darkmode.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/members.js"></script>
+        <script>
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
+        </script>
+    </div>
+</body>
+
+</html>

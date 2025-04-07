@@ -421,6 +421,102 @@ main {
 }
 
 /* ===========================
+   Join Page Styles
+   =========================== */
+main.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main.form h1 {
+    text-align: center;
+    color: #0077B6;
+    margin-bottom: 1rem;
+}
+
+main.form .benefits {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #F0F8FF;
+    border: 1px solid #0077B6;
+    border-radius: 8px;
+}
+
+main.form .benefits h3 {
+    color: #03045E;
+    margin-bottom: 0.5rem;
+}
+
+main.form .benefits ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+main.form form {
+    margin-top: 2rem;
+}
+
+main.form form fieldset {
+    border: 1px solid #0077B6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main.form form fieldset h2 {
+    color: #03045E;
+    margin-bottom: 1rem;
+}
+
+main.form form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #03045E;
+}
+
+main.form form input,
+main.form form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+main.form form input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+main.form form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main.form form button:hover {
+    background-color: #005f8a;
+}
+
+/* ===========================
    Footer Styles
    =========================== */
 footer {
