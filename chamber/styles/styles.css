@@ -219,6 +219,41 @@ main {
 }
 
 /* ===========================
+   Discover Cards Styles
+   =========================== */
+#discover-cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card"
+        "card"
+        "card";
+}
+
+.card-listing img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card-listing img:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 641px) {
+    #discover-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    #discover-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ===========================
    Info Sections Styles
    =========================== */
 #info-sections {

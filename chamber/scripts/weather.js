@@ -1,4 +1,4 @@
-const apiKey = 'bd5e378503939ddaee76f12ad7a97608';
+const apiKey = '3ecb70f187942fefdf518b2d16424c59';
 const city = 'New Orleans';
 const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
 

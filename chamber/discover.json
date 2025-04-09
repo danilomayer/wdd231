@@ -1,0 +1,50 @@
+[
+    {
+        "name": "French Quarter",
+        "address": "New Orleans, LA 70116",
+        "description": "The historic heart of New Orleans, known for its vibrant nightlife and colorful buildings.",
+        "image": "images/french-quarter.webp"
+    },
+    {
+        "name": "Jackson Square",
+        "address": "701 Decatur St, New Orleans, LA 70116",
+        "description": "A historic park in the French Quarter, featuring street performers and artists.",
+        "image": "images/jackson-square.webp"
+    },
+    {
+        "name": "Bourbon Street",
+        "address": "New Orleans, LA 70130",
+        "description": "Famous for its lively bars and music scene, a must-visit for nightlife enthusiasts.",
+        "image": "images/bourbon-street.webp"
+    },
+    {
+        "name": "Garden District",
+        "address": "New Orleans, LA 70115",
+        "description": "Known for its well-preserved historic mansions and oak-lined streets.",
+        "image": "images/garden-district.webp"
+    },
+    {
+        "name": "Audubon Zoo",
+        "address": "6500 Magazine St, New Orleans, LA 70118",
+        "description": "A family-friendly attraction featuring exotic animals and lush gardens.",
+        "image": "images/audubon-zoo.webp"
+    },
+    {
+        "name": "St. Louis Cathedral",
+        "address": "615 Pere Antoine Alley, New Orleans, LA 70116",
+        "description": "A stunning historic cathedral located in Jackson Square.",
+        "image": "images/st-louis-cathedral.webp"
+    },
+    {
+        "name": "City Park",
+        "address": "1 Palm Dr, New Orleans, LA 70124",
+        "description": "A large urban park with beautiful landscapes, museums, and recreational activities.",
+        "image": "images/city-park.webp"
+    },
+    {
+        "name": "National WWII Museum",
+        "address": "945 Magazine St, New Orleans, LA 70130",
+        "description": "A world-renowned museum dedicated to the history of World War II.",
+        "image": "images/wwii-museum.webp"
+    }
+]
