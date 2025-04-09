@@ -1,4 +1,4 @@
-fetch('data/discover.json')
+fetch('discover.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('discover-cards');
