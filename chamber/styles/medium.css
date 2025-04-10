@@ -89,6 +89,38 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
+    /* ===========================
+    Discover Cards Styles
+    =========================== */
+
+    .discover {
+        margin-top: -10rem;
+    }
+
+    .card-listing {
+        grid-template-areas:
+            "figure title"
+            "figure description"
+            "figure address"
+            "figure button"
+        ;
+    }
+
+    .card-listing img {
+        width: 250px;
+    }
+
+    #discover-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+
+
+
+
     footer {
         flex-direction: column;
         text-align: center;

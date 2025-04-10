@@ -41,4 +41,17 @@
     main.form {
         margin: -10rem 0 0 0;
     }
+
+    /* ===========================
+    Discover Cards Styles
+    =========================== */
+    .card-listing {
+        grid-template-areas:
+            "title"
+            "figure"
+            "description"
+            "address"
+            "button"
+        ;
+    }
 }
