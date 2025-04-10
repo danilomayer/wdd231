@@ -8,7 +8,7 @@ fetch('discover.json')
             card.innerHTML = `
                 <h2>${item.name}</h2>
                 <figure>
-                    <img src="${item.image}" alt="${item.name}" loading="lazy"
+                    <img src="${item.image}" alt="${item.name}" loading="lazy">
                 </figure>
                 <address>${item.address}</address>
                 <p>${item.description}</p>
