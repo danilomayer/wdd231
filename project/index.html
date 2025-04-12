@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Main page for Alana Mayer RH Consultoria website.">
+    <meta name="author" content="Danilo Mayer">
+    <meta property="og:title" content="Alana Mayer RH Consultoria">
+    <meta property="og:site_name" content="Alana Mayer RH Consultoria">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.neworleanschamber.org/">
+    <meta property="og:url" content="https://danilomayer.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Main page for Alana Mayer RH Consultoria website.">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="us_EN">
+    <title>Alana Mayer RH Consultoria</title>
+    <link rel="favicon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <button id="menu" aria-label="Toggle Navigation Menu">
+                <b>☰</b>
+            </button>
+            <nav class="navigation" aria-label="Main Navigation">
+                <a href="index.html" class="navlink">➡ Home</a>
+                <a href="about.html" class="navlink">About Me</a>
+                <img src="images/chamber-logo.webp" alt="Alana Mayer RH Consultoria" class="logo-img">
+                <a href="contact.html" class="navlink">Contact</a>
+            </nav>
+        </header>
+
+
+
+        <section id="hero">
+        </section>
+
+        <main>
+            <h1>Home</h1>
+        </main>
+
+        <footer>
+            <div id="description">
+                <p>&copy; <span id="currentdate"></span> by Danilo Mayer
+                </p>
+                <p><span id="lastModified"></span></p>
+            </div>
+            <div id="social">
+                <p>Social Media</p>
+                <p>Contact us @</p>
+                <p>Contato</p>
+            </div>
+        </footer>
+        <script src="scripts/hambutton.js"></script>
+        <script>
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
+        </script>
+    </div>
+</body>
+
+</html>

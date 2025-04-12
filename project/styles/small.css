@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poiret+One&display=swap');
+
+:root {
+    --header-font: "Courgette", cursive;
+    --text-font: "Poiret One", sans-serif;
+    --line-height: 1.6;
+    --background-color: #FFE5D9;
+    --text-color: #725e64;
+    --primary-color: #C7EFCF;
+    --secondary-color: #D8E2DC;
+    --border-color: #725e64;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    line-height: var(--line-height);
+    padding: 2rem;
+    text-align: center;
+}
