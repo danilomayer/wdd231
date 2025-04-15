@@ -10,4 +10,4 @@ function showNextItem() {
 }
 
 items[currentIndex].classList.add('active');
-setInterval(showNextItem, 3000);
+setInterval(showNextItem, 5000);
