@@ -899,6 +899,11 @@ footer p {
 
     .card-listing img {
         width: 250px;
+        transition: none;
+    }
+
+    .card-listing img:hover {
+        transform: none;
     }
 
     #discover-cards {
