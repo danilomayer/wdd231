@@ -5,9 +5,9 @@
     --text-font: sans-serif;
     --logo-font: "Radley", serif;
     --line-height: 1.6;
-    --background-color: #F8FBEF;
+    --background-color: #F3F6F4;
     --text-color: #725e64;
-    --primary-color: #F8FBEF;
+    --primary-color: #F3F6F4;
     --secondary-color: #D8E2DC;
     --border-color: #725e64;
 }
@@ -48,11 +48,6 @@ p {
     padding: 2rem 1rem;
 }
 
-#call-to-action {
-    color: var(--text-color);
-    margin: 2rem 0;
-}
-
 /* ------------------
     Carousel styles 
 --------------------*/
@@ -81,6 +76,11 @@ p {
 .carousel-item p:last-child {
     font-size: 1.2rem;
     /* Gold color for stars */
+}
+
+#call-to-action {
+    color: var(--text-color);
+    margin: 2rem 0;
 }
 
 /* ------------------
