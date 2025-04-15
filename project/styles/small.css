@@ -5,16 +5,16 @@
     --text-font: sans-serif;
     --logo-font: "Radley", serif;
     --line-height: 1.6;
-    --background-color: #FFE5D9;
+    --background-color: #F8FBEF;
     --text-color: #725e64;
-    --primary-color: #C7EFCF;
+    --primary-color: #F8FBEF;
     --secondary-color: #D8E2DC;
     --border-color: #725e64;
 }
 
 body {
     margin: auto;
-    background-color: whitesmoke;
+    background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--text-font);
     line-height: var(--line-height);
@@ -34,6 +34,11 @@ h6 {
     margin: 0;
 }
 
+p {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 1rem;
+}
 
 /* ------------------
     Hero styles 
@@ -64,7 +69,7 @@ h6 {
 .carousel-item {
     flex: 0 0 100%;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     position: absolute;
 }
 
@@ -75,7 +80,6 @@ h6 {
 
 .carousel-item p:last-child {
     font-size: 1.2rem;
-    color: #FFD700;
     /* Gold color for stars */
 }
 
@@ -87,8 +91,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     border-bottom: 1px solid var(--border-color);
+    text-align: justify;
 }
 
 header .logo {
@@ -102,10 +107,19 @@ header .logo {
 nav.navigation {
     display: none;
     /* Hide the menu by default */
+
+}
+
+nav.navigation.active {
+    display: flex;
+    /* Show the menu when active */
+    flex-direction: column;
     position: absolute;
-    top: 60px;
+    justify-content: space-between;
+    background-color: var(--text-color);
+    margin: 1.5rem auto;
+    top: 65px;
     cursor: pointer;
-    height: 3px;
     /* Adjust based on your header height */
     right: 10px;
     width: 200px;
@@ -114,34 +128,24 @@ nav.navigation {
     z-index: 1000;
 }
 
-nav.navigation.active {
-    display: flex;
-    /* Show the menu when active */
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--text-color);
-}
-
 #menu {
     background-color: var(--primary-color);
     width: 35px;
     height: 35px;
     border-radius: 5px;
     cursor: pointer;
-
-    /* Hide the menu icon by default */
 }
 
 nav.navigation a {
     padding: 1rem;
     text-align: center;
-    color: var(--text-color);
+    color: var(--background-color);
     text-decoration: none;
-    border-bottom: 1px solid var(--border-color);
 }
 
 nav.navigation a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* ------------------
@@ -155,7 +159,7 @@ nav.navigation a:hover {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.4s ease;
+    transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
