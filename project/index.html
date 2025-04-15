@@ -25,27 +25,27 @@
 <body>
     <div id="content">
         <header>
+            <h3 class="logo">Alana Mayer <br> RH Consultoria</h3>
+            <button type="button" onclick="location.href='contact.html';" class="contact-button">Contact Us</button>
             <button id="menu" aria-label="Toggle Navigation Menu">
                 <b>☰</b>
             </button>
             <nav class="navigation" aria-label="Main Navigation">
                 <a href="index.html" class="navlink">➡ Home</a>
                 <a href="about.html" class="navlink">About Me</a>
-                <img src="images/chamber-logo.webp" alt="Alana Mayer RH Consultoria" class="logo-img">
                 <a href="contact.html" class="navlink">Contact</a>
             </nav>
         </header>
+
         <section id="hero">
             <h1>Welcome to Alana Mayer RH Consultoria</h1>
             <p>Your trusted partner in Human Resources solutions. Now the following will be added later in our home
                 language the Brazilian Portuguese. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-                non ab. Ad repellat praesentium incidunt atque, alias at saepe, expedita similique nesciunt,
-                possimus dolorum in odio cumque quis voluptas accusamus.</p>
+                non ab. Ad possimus dolorum in odio cumque quis voluptas accusamus.</p>
         </section>
 
 
         <main>
-            <h1>Home</h1>
             <section id="client-reviews">
                 <h2>What Our Clients Say</h2>
                 <div class="carousel">
@@ -67,26 +67,35 @@
                     </div>
                 </div>
             </section>
+            <section id="call-to-action">
+                <h2>Sign Up for Specialized Service <br> NOW ⬇</h2>
+                <button type="button" class="contact-button" onclick="location.href='contact.html';">Contact
+                    Us</button>
+            </section>
         </main>
 
         <footer>
-            <div id="description">
-                <p>&copy; <span id="currentdate"></span> by Danilo Mayer
-                </p>
-                <p><span id="lastModified"></span></p>
-            </div>
             <div id="social">
-                <p>Social Media</p>
-                <p>Contact us @</p>
-                <p>Contato</p>
+                <p>Follow us:</p>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram.webp" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.webp" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.webp" alt="Twitter" class="social-icon">
+                </a>
+            </div>
+            <div id="description">
+                <p>&copy; 2024 Your Website. <br> All rights reserved.</p>
+                <p><a href="https://www.termsfeed.com/live/eba48ae5-d075-446f-b154-3a274d03a444">Privacy Policy</a></p>
+                <p><a href="https://www.termsfeed.com/live/eba48ae5-d075-446f-b154-3a274d03a444">Terms of Service</a>
+                </p>
             </div>
         </footer>
         <script src="scripts/carousel.js"></script>
         <script src="scripts/hambutton.js"></script>
-        <script>
-            const options = { day: 'numeric', month: 'short', year: 'numeric' };
-            document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
-        </script>
     </div>
 </body>
 

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poiret+One&family=Radley:ital@0;1&display=swap');
 
 :root {
     --header-font: "Courgette", cursive;
-    --text-font: "Poiret One", sans-serif;
+    --text-font: sans-serif;
+    --logo-font: "Radley", serif;
     --line-height: 1.6;
     --background-color: #FFE5D9;
     --text-color: #725e64;
@@ -12,19 +13,48 @@
 }
 
 body {
-    margin: 0;
-    background-color: var(--background-color);
+    margin: auto;
+    background-color: whitesmoke;
     color: var(--text-color);
     font-family: var(--text-font);
-    font-size: 1.2rem;
     line-height: var(--line-height);
-    padding: 2rem;
     text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font);
+    font-weight: 500;
+    font-size: x-large;
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+/* ------------------
+    Hero styles 
+--------------------*/
+
+#hero {
+    padding: 2rem 1rem;
+}
+
+#call-to-action {
+    color: var(--text-color);
+    margin: 2rem 0;
 }
 
 /* ------------------
     Carousel styles 
 --------------------*/
+#client-reviews {
+    margin: 3.5rem auto;
+}
+
 .carousel {
     display: flex;
     overflow: hidden;
@@ -47,4 +77,131 @@ body {
     font-size: 1.2rem;
     color: #FFD700;
     /* Gold color for stars */
+}
+
+/* ------------------
+    Header & Navigation styles
+--------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+header .logo {
+    font-family: var(--logo-font);
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    color: var(--text-color);
+}
+
+nav.navigation {
+    display: none;
+    /* Hide the menu by default */
+    position: absolute;
+    top: 60px;
+    cursor: pointer;
+    height: 3px;
+    /* Adjust based on your header height */
+    right: 10px;
+    width: 200px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav.navigation.active {
+    display: flex;
+    /* Show the menu when active */
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--text-color);
+}
+
+#menu {
+    background-color: var(--primary-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Hide the menu icon by default */
+}
+
+nav.navigation a {
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav.navigation a:hover {
+    background-color: var(--primary-color);
+}
+
+/* ------------------
+    Contact Button styles
+--------------------*/
+
+.contact-button {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* ------------------
+    Footer styles 
+--------------------*/
+footer {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+}
+
+footer #social p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
+}
+
+footer #description {
+    margin: 1rem 0;
+
+}
+
+footer #description p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#description a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icon {
+    margin: 1rem 0;
+    height: 40px;
 }
