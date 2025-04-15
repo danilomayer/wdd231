@@ -1,1 +1,104 @@
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+
+    /* ------------------
+    Hero styles 
+    --------------------*/
+
+    #hero {
+        padding: 4rem;
+    }
+
+    /* ------------------
+    Carousel styles 
+    --------------------*/
+    .carousel {
+        display: flex;
+        overflow: hidden;
+        gap: 1rem;
+    }
+
+    .carousel-item {
+        flex: 0 0 calc(50% - 0.5rem);
+        /* 2 items side by side */
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .carousel-item.active {
+        opacity: 1;
+    }
+
+
+    /* ------------------
+    Header & Navigation styles
+    --------------------*/
+    nav.navigation {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        right: 3rem;
+    }
+
+    nav.navigation a {
+        margin: auto 2rem;
+        color: var(--text-color);
+        border-radius: 5px;
+        padding: 0.5rem;
+    }
+
+    nav.navigation a:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    header .contact-button {
+        display: none;
+    }
+
+    /* Hide the menu button on larger screens */
+
+
+    /* ------------------
+    Footer styles 
+    --------------------*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        padding: 1rem 2rem;
+        width: auto;
+    }
+
+    footer #social {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        width: 40%;
+    }
+
+    footer #social p {
+        margin: 0;
+    }
+
+    footer #description {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        width: 50%;
+        margin: 0;
+    }
+
+    footer #description p {
+        margin: 0.2rem;
+    }
+
+
+}

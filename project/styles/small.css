@@ -52,7 +52,7 @@ p {
     Carousel styles 
 --------------------*/
 #client-reviews {
-    margin: 3.5rem auto;
+    margin: 3.5rem;
 }
 
 .carousel {
@@ -102,6 +102,11 @@ header .logo {
     font-weight: normal;
     line-height: 1.2;
     color: var(--text-color);
+}
+
+#logo-link {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 nav.navigation {
