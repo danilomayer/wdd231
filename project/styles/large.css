@@ -10,6 +10,14 @@
 
 
     /* ------------------
+    About Content styles
+    --------------------*/
+
+    #core-values h2 {
+        padding-top: 3rem;
+    }
+
+    /* ------------------
     Carousel styles 
     --------------------*/
     .carousel-item {
