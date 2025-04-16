@@ -41,9 +41,101 @@ p {
 }
 
 /* ------------------
+    Contact Page Styles
+-------------------- */
+#contact {
+    padding: 2rem 1rem;
+    text-align: left;
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+#contact h1 {
+    text-align: center;
+    font-family: var(--header-font);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+label.top {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* ------------------
     Hero styles 
 --------------------*/
-
 #hero {
     padding: 2rem 1rem;
 }
@@ -156,7 +248,6 @@ nav.navigation a:hover {
 /* ------------------
     Contact Button styles
 --------------------*/
-
 .contact-button {
     background-color: var(--text-color);
     color: var(--background-color);

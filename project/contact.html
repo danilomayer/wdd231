@@ -5,36 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Main page for Alana Mayer RH Consultoria website.">
+    <meta name="description" content="Contact page for Alana Mayer RH Consultoria website.">
     <meta name="author" content="Danilo Mayer">
     <meta property="og:title" content="Alana Mayer RH Consultoria">
     <meta property="og:site_name" content="Alana Mayer RH Consultoria">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://danilomayer.github.io/wdd231/chamber/index.html">
-    <meta property="og:description" content="Main page for Alana Mayer RH Consultoria website.">
+    <meta property="og:url" content="https://danilomayer.github.io/wdd231/chamber/contact.html">
+    <meta property="og:description" content="Contact for Alana Mayer RH Consultoria website.">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:locale:alternate" content="us_EN">
-    <title>Alana Mayer RH Consultoria</title>
+    <title>Contact - Alana Mayer RH Consultoria</title>
     <link rel="favicon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
     <div id="content">
         <header>
+            <a href="index.html" id="logo-link" aria-label="Home Page">
+                <h3 class="logo">Alana Mayer <br> RH Consultoria</h3>
+            </a>
+            <button type="button" onclick="location.href='contact.html';" class="contact-button">Contact Us</button>
             <button id="menu" aria-label="Toggle Navigation Menu">
                 <b>☰</b>
             </button>
             <nav class="navigation" aria-label="Main Navigation">
-                <a href="index.html" class="navlink">➡ Home</a>
+                <a href="index.html" class="navlink">Home</a>
                 <a href="about.html" class="navlink">About Me</a>
-                <img src="images/chamber-logo.webp" alt="Alana Mayer RH Consultoria" class="logo-img">
-                <a href="contact.html" class="navlink">Contact</a>
+                <a href="contact.html" class="navlink">➡ Contact</a>
             </nav>
         </header>
 
+        <main id="contact">
+            <h1>Contact Us for Personalized HR Consulting</h1>
+            <form method="post" action="thankyou.html">
+                <div id="formmessage"></div>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">First Name*
+                        <input type="text" id="fname" name="fname" required>
+                    </label>
+                    <label class="top">Last Name*
+                        <input type="text" id="lname" name="lname" required>
+                    </label>
+                    <label class="top">Email*
+                        <input type="email" id="email" name="email" required placeholder="johndoe@abc.com">
+                    </label>
+                    <label class="top">Phone*
+                        <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+                    </label>
+                </fieldset>
 
-        <h1>JOIN PAGE</h1>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business/Organization's Name*
+                        <input type="text" id="businessOrg" name="businessOrg" required>
+                    </label>
+                    <label class="top">Title or Position*
+                        <input type="text" id="title" name="title" required>
+                    </label>
+                    <label class="top">Business/Organization's Description*
+                        <textarea name="businessDesc" id="businessDesc" cols="50" rows="5" required></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Service Inquiry</legend>
+                    <label class="level">
+                        <input type="radio" id="np" name="serviceType" required> Non-Profit HR Consulting
+                    </label>
+                    <label class="level">
+                        <input type="radio" id="bronze" name="serviceType" required> Bronze HR Package
+                    </label>
+                    <label class="level">
+                        <input type="radio" id="silver" name="serviceType" required> Silver HR Package
+                    </label>
+                    <label class="level">
+                        <input type="radio" id="gold" name="serviceType" required> Gold HR Package
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="top">How can we assist you?*
+                        <textarea name="assistance" id="assistance" cols="50" rows="5" required></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" name="formTimestamp" id="formTimestamp">
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </main>
+
+        <footer>
+            <div id="social">
+                <p>Follow us:</p>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram.webp" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook.webp" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.webp" alt="Twitter" class="social-icon">
+                </a>
+            </div>
+            <div id="description">
+                <p>&copy; 2024 Your Website. All rights reserved.</p>
+                <p><a href="https://www.termsfeed.com/live/eba48ae5-d075-446f-b154-3a274d03a444">Privacy Policy</a></p>
+                <p><a href="https://www.termsfeed.com/live/eba48ae5-d075-446f-b154-3a274d03a444">Terms of Service</a>
+                </p>
+            </div>
+        </footer>
+        <script src="scripts/carousel.js"></script>
+        <script src="scripts/hambutton.js"></script>
+    </div>
+</body>
+
+</html>

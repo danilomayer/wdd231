@@ -1,10 +1,37 @@
 @media (min-width: 768px) {
 
+    /* ------------------
+    Contact Page styles
+    --------------------*/
+    #contact {
+        padding: 3rem 2rem;
+    }
+
+    form {
+        max-width: 700px;
+        padding: 2.5rem;
+    }
+
+    legend {
+        font-size: 1.4rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        font-size: 1.1rem;
+        padding: 0.75rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
 
     /* ------------------
     Hero styles 
     --------------------*/
-
     #hero {
         padding: 4rem;
     }
@@ -12,7 +39,6 @@
     /* ------------------
     About Content styles 
     --------------------*/
-
     #about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -80,7 +106,6 @@
         opacity: 1;
     }
 
-
     /* ------------------
     Header & Navigation styles
     --------------------*/
@@ -110,9 +135,8 @@
 
     header .contact-button {
         display: none;
+        /* Hide the menu button on larger screens */
     }
-
-    /* Hide the menu button on larger screens */
 
 
     /* ------------------
