@@ -133,6 +133,12 @@ button[type="submit"]:hover {
     color: var(--text-color);
 }
 
+/* thank you styles */
+#thanks {
+    margin: 3rem;
+    padding: 2rem;
+}
+
 /* ------------------
     Hero styles 
 --------------------*/
